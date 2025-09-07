@@ -98,8 +98,8 @@ app.post('/logout', (req, res) => {
 
 
 // Start server
-app.listen(3000, () => {
-    console.log('Server running at http://localhost:3000');
+app.listen(process.env.PORT || 3000, '0.0.0.0', () => {
+  console.log('Server running');
 });
 
 // Handle 404 errors for undefined routes
@@ -107,3 +107,4 @@ app.use((req, res, next) => {
     res.status(404).send('404 Not Found');
 
 });
+
