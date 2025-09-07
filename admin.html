@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Admin Panel - Upload Artwork</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 40px;
+        }
+        .container {
+            max-width: 500px;
+            margin: auto;
+        }
+        h2 {
+            text-align: center;
+        }
+        form {
+            margin-bottom: 30px;
+        }
+        .preview {
+            margin-top: 20px;
+            text-align: center;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+        .logout {
+            text-align: center;
+        }
+        .logout button {
+            background-color: #c00;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Admin Panel - Upload Artwork</h2>
+
+        <form id="uploadForm" enctype="multipart/form-data" method="POST" action="/upload">
+            <label for="artwork">Select image to upload:</label><br>
+            <input type="file" id="artwork" name="artwork" accept="image/*" required><br><br>
+            <button type="submit">Upload</button>
+        </form>
+
+       <form method="POST" action="/logout">
+    <button type="submit">Logout</button>
+</form>
+
+
+        <div class="preview" id="preview"></div>
+    </div>
+
+    <script>
+     
+        document.getElementById('artwork').addEventListener('change', function(e) {
+            const preview = document.getElementById('preview');
+            preview.innerHTML = '';
+            const file = e.target.files[0];
+            if (file) {
+                const img = document.createElement('img');
+                img.src = URL.createObjectURL(file);
+                preview.appendChild(img);
+            }
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,108 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #fff;
+  color: #333;
+}
+
+nav {
+  background-color: #fff;
+  border-bottom: 1px solid #ddd;
+  display: flex;
+  justify-content: left;
+  margin-right: 200px 0 0 0;
+  padding: 10px 0 0 40px;
+}
+
+nav a {
+  margin: 20px 40px;
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+}
+
+nav a:hover {
+  color: #0077cc;
+  text-decoration: underline;
+}
+
+section {
+  padding: 10px 100px 20px;
+  text-align: center;
+  margin: 10px;
+
+}
+
+h1 {
+  font-family: 'Pacifico', cursive;
+  font-size: 60px;
+  color: #c57fff;
+    margin-top: 100px;
+
+}
+h2 {
+  font-family: 'Pacifico', cursive;
+  font-size: 40px;
+  color: #c57fff;
+}
+
+.about-style {
+  font-family: 'Pacifico', cursive;
+  font-size: 40px;
+  color: #c57fff;
+}
+
+.shop-style {
+  font-family: 'Pacifico', cursive;
+  font-size: 40px;
+  color: #c57fff;
+}
+
+.my-button {
+  background-color: #ffffff;
+  color: rgb(37, 37, 37);
+  padding: 12px 24px;
+  border: 2px solid #4d4d4d;     
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s, border-color 0.3s;
+}
+
+.my-button:hover {
+  background-color: #a36eaa;
+  border-color: #202020; 
+  color: #000000;       
+}
+
+.shop-logos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.shop-logo {
+  width: 300px;               
+  height: auto;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.shop-logo:hover {
+  transform: scale(1.3);
+  opacity: 0.9;
+}
+
+.maintenance {
+  background-color: #fff3cd;
+  color: #856404;
+  padding: 15px;
+  border: 1px solid #ffeeba;
+  border-radius: 5px;
+  font-family: Arial, sans-serif;
+  text-align: center;
+  margin: 20px auto;
+  width: 80%;
+}
