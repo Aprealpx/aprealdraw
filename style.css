@@ -12,7 +12,7 @@ nav {
   display: flex;
   align-items: center;
   padding: 10px 20px;
-  gap: 255px;
+  gap: 270px;
 }
 
 nav a {
@@ -118,3 +118,4 @@ h2,
   margin: 20px auto;
   width: 80%;
 }
+
